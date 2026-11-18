@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Cafeteria Ordering System | LPU</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="function.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h2>Campus Cafe</h2>
+            <p>LPU Student Food Corner</p>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Food Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#cart">My Cart 🛒</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="tagline">WELCOME TO CAMPUS CAFE</p>
+                <h1>Good Food, Happy Students!</h1>
+                <p>
+                    Explore your favourite campus food, check prices
+                    and enjoy a convenient cafeteria experience
+                    during your college breaks.
+                </p>
+                <a href="#menu" class="btn">Explore Menu</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/cafeteria.jpeg" alt="Campus cafeteria">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Quick Access</h3>
+                <p>Browse different food items in one place.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Clear Prices</h3>
+                <p>Check food prices before making a choice.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Food Availability</h3>
+                <p>View the availability of cafeteria items.</p>
+            </div>
+
+        </section>
+
+        <section id="menu" class="menu-section">
+
+            <div class="section-heading">
+                <p class="tagline">FRESH AND DELICIOUS</p>
+                <h2>Our Canteen Menu</h2>
+                <p>Choose your favourite food from our menu.</p>
+            </div>
+        <!-- FOOD SEARCH AND CATEGORY FILTER -->
+
+<div class="menu-tools">
+
+    <div class="search-box">
+        <input
+            type="text"
+            placeholder="Search your favourite food..."
+            aria-label="Search food"
+        >
+        <span>🔍</span>
+    </div>
+
+    <div class="category-filters">
+        <button type="button" class="filter-btn active">All Items</button>
+        <button type="button" class="filter-btn">Breakfast</button>
+        <button type="button" class="filter-btn">Lunch</button>
+        <button type="button" class="filter-btn">Snacks</button>
+        <button type="button" class="filter-btn">Fast Food</button>
+        <button type="button" class="filter-btn">Beverages</button>
+    </div>
+
+</div>
+
+
+            <div class="menu-grid">
+
+                <!-- Breakfast -->
+
+                <article class="food-card">
+                    <img src="images/idlisambar.jpeg" alt="Idli Sambar">
+                <div class="food-info">
+                        <span class="category">BREAKFAST</span>
+                        <h3>Idli Sambar</h3>
+                        <p>Soft idlis served with fresh sambar and chutney.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹50</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/masaladosa.jpeg" alt="Masala Dosa">
+                    <div class="food-info">
+                        <span class="category">BREAKFAST</span>
+                        <h3>Masala Dosa</h3>
+                        <p>Crispy dosa filled with spiced potato masala.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹70</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/alooparatha.jpeg" alt="Aloo Paratha">
+                    <div class="food-info">
+                        <span class="category">BREAKFAST</span>
+                        <h3>Aloo Paratha</h3>
+                        <p>Stuffed paratha served with curd and pickle.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹60</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/poha.jpeg" alt="Poha">
+                    <div class="food-info">
+                        <span class="category">BREAKFAST</span>
+                        <h3>Poha</h3>
+                        <p>Light and tasty poha with peanuts and spices.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹35</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/vegsandwich.jpeg" alt="Veg Sandwich">
+                    <div class="food-info">
+                        <span class="category">BREAKFAST</span>
+                        <h3>Veg Sandwich</h3>
+                        <p>Fresh sandwich filled with vegetables.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹50</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Lunch -->
+
+                <article class="food-card">
+                    <img src="images/cholebhature.jpeg" alt="Chole Bhature">
+                    <div class="food-info">
+                        <span class="category">LUNCH</span>
+                        <h3>Punjabi Chole Bhature</h3>
+                        <p>Hot bhature served with spicy chickpea curry.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹80</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/rajmachawal.jpeg" alt="Rajma Chawal">
+                    <div class="food-info">
+                        <span class="category">LUNCH</span>
+                        <h3>Rajma Chawal</h3>
+                        <p>Homemade style rajma served with steamed rice.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹75</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/vegthali.jpeg" alt="Veg Thali">
+                    <div class="food-info">
+                        <span class="category">LUNCH</span>
+                        <h3>Veg Thali</h3>
+                        <p>A complete meal with roti, dal, rice and sabzi.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹100</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/vegfriedrice.jpeg" alt="Veg Fried Rice">
+                    <div class="food-info">
+                        <span class="category">LUNCH</span>
+                        <h3>Veg Fried Rice</h3>
+                        <p>Rice cooked with vegetables and mild spices.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹80</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/dalmakhani.jpeg" alt="Dal Makhani">
+                    <div class="food-info">
+                        <span class="category">LUNCH</span>
+                        <h3>Dal Makhani</h3>
+                        <p>Creamy dal served with fresh Indian bread.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹90</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Snacks -->
+
+                <article class="food-card">
+                    <img src="images/samosa.jpeg" alt="Samosa">
+                    <div class="food-info">
+                        <span class="category">SNACKS</span>
+                        <h3>Crispy Samosa</h3>
+                        <p>Two crispy samosas with potato filling.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹30</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/maggi.jpeg" alt="Masala Maggi">
+                    <div class="food-info">
+                        <span class="category">SNACKS</span>
+                        <h3>Masala Maggi</h3>
+                        <p>Hot noodles cooked with delicious spices.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹40</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/frenchfries.jpeg" alt="French Fries">
+                    <div class="food-info">
+                        <span class="category">SNACKS</span>
+                        <h3>French Fries</h3>
+                        <p>Crispy golden potato fries.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹70</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/breadpakora.jpeg" alt="Bread Pakora">
+                    <div class="food-info">
+                        <span class="category">SNACKS</span>
+                        <h3>Bread Pakora</h3>
+                        <p>Fried bread stuffed with spicy potato filling.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹35</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/paneerroll.jpeg" alt="Paneer Roll">
+                    <div class="food-info">
+                        <span class="category">SNACKS</span>
+                        <h3>Paneer Roll</h3>
+                        <p>Soft roll filled with spicy paneer and vegetables.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹75</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Fast Food -->
+
+                <article class="food-card">
+                    <img src="images/vegburger.jpeg" alt="Veg Burger">
+                    <div class="food-info">
+                        <span class="category">FAST FOOD</span>
+                        <h3>Veg Burger</h3>
+                        <p>Burger with a crispy vegetable patty and sauces.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹60</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/paneerpizza.jpeg" alt="Paneer Pizza">
+                    <div class="food-info">
+                        <span class="category">FAST FOOD</span>
+                        <h3>Paneer Pizza</h3>
+                        <p>Pizza topped with paneer, cheese and vegetables.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹120</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/vegpasta.jpeg" alt="Veg Pasta">
+                    <div class="food-info">
+                        <span class="category">FAST FOOD</span>
+                        <h3>Veg Pasta</h3>
+                        <p>Pasta cooked with vegetables and creamy sauce.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹90</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/grilledsandwich.jpeg" alt="Grilled Sandwich">
+                    <div class="food-info">
+                        <span class="category">FAST FOOD</span>
+                        <h3>Grilled Sandwich</h3>
+                        <p>Grilled bread with cheese and fresh vegetables.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹65</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/vegchowmein.jpeg" alt="Veg Chowmein">
+                    <div class="food-info">
+                        <span class="category">FAST FOOD</span>
+                        <h3>Veg Chowmein</h3>
+                        <p>Stir-fried noodles with vegetables and sauces.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹70</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Beverages -->
+
+                <article class="food-card">
+                    <img src="images/chai.jpeg" alt="Campus Special Chai">
+                    <div class="food-info">
+                        <span class="category">BEVERAGES</span>
+                        <h3>Campus Special Chai</h3>
+                        <p>Freshly prepared hot tea.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹15</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/coldcoffee.jpeg" alt="Cold Coffee">
+                    <div class="food-info">
+                        <span class="category">BEVERAGES</span>
+                        <h3>Cold Coffee</h3>
+                        <p>Chilled coffee with a creamy taste.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹70</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/limesoda.jpeg" alt="Fresh Lime Soda">
+                    <div class="food-info">
+                        <span class="category">BEVERAGES</span>
+                        <h3>Fresh Lime Soda</h3>
+                        <p>Refreshing lime drink served chilled.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹40</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/chocolatemilkshake.jpeg" alt="Chocolate Milkshake">
+                    <div class="food-info">
+                        <span class="category">BEVERAGES</span>
+                        <h3>Chocolate Milkshake</h3>
+                        <p>Cold milkshake with chocolate flavour.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹80</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="images/Water.jpeg" alt="Packaged Water">
+                    <div class="food-info">
+                        <span class="category">BEVERAGES</span>
+                        <h3>Packaged Water</h3>
+                        <p>Packaged drinking water bottle.</p>
+                        <div class="food-bottom">
+                            <span class="price">₹20</span>
+                            <span class="availability">In Stock</span>
+                        </div>
+                        <button type="button" class="order-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <!-- SHOPPING CART SECTION -->
+
+<section id="cart" class="cart-section">
+
+    <div class="section-heading">
+        <p class="tagline">YOUR FOOD SELECTION</p>
+        <h2>My Shopping Cart</h2>
+        <p>Your selected food items will appear here.</p>
+    </div>
+
+    <div class="cart-container">
+
+        <!-- CART ITEMS -->
+
+        <div class="cart-items">
+
+            <div class="cart-header">
+                <h3>Cart Items</h3>
+                <span>0 Items</span>
+            </div>
+
+            <div class="empty-cart">
+                <div class="cart-icon">🛒</div>
+                <h3>Your Cart is Empty</h3>
+                <p>Looks like you haven't added any food yet.</p>
+                <a href="#menu" class="continue-btn">
+                    Explore Food Menu
+                </a>
+            </div>
+
+        </div>
+
+        <!-- ORDER SUMMARY -->
+
+        <div class="order-summary">
+
+            <h3>Order Summary</h3>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>₹0</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Delivery Fee</span>
+                <span>₹0</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Discount</span>
+                <span>₹0</span>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <div class="summary-total">
+                <span>Total Amount</span>
+                <span>₹0</span>
+            </div>
+
+            <button type="button" class="checkout-btn" disabled>
+                Place Order
+            </button>
+
+            <p class="secure-text">
+                Campus Cafe | Student Food Ordering
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <section id="about" class="about-section">
+            <h2>About Campus Cafe</h2>
+            <p>
+                Campus Cafeteria Ordering System is a student project
+                designed to provide an organised way to explore
+                cafeteria food items. Students can view different
+                categories, prices and availability in one place.
+                The main aim is to make the campus food experience
+                more convenient during short breaks.
+            </p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Campus Cafe | CSE326 Student Project, LPU</p>
+            <p>For project-related queries, contact the cafeteria team.</p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <h3>Campus Cafe</h3>
+        <p>Good Food, Happy Students!</p>
+        <p>Designed for LPU Students</p>
+        <p class="copyright">
+            © 2026 Campus Cafe. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
